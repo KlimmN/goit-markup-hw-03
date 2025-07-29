@@ -127,6 +127,9 @@ body {
     background-color: #FFFFFF;
 }
 
+.hero-container {;
+}
+
 .mision-item .third-title {
     color: #2E2F42;
     font-family: Roboto, sans-serif;
@@ -144,26 +147,41 @@ body {
 }
     
 .business {
-    background-color: #2E2F42;
+    background-color: #2e2f42;
+    line-height: 1.07;
+    padding: 188px 0;
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 48px;
 }
 
 .page-title {
-    text-align: center;
-    color: #FFFFFF;
+    font-weight: 700;
     font-size: 56px;
-    line-height: 1.07;
     letter-spacing: 0.02em;
+    text-align: center;
+    color: #fff;
+    max-width: 496px;
 }
 
 .button {
-    color: #FFFFFF;
-    background-color: #4D5AE5;
-    font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
+    color: #fff;
+    background-color: #4d5ae5;
     cursor: pointer;
+    border-radius: 4px;
+    border: none;
+    min-width: 169px;
+    padding: 16px 32px;
+    background: #4d5ae5;
 }
 
 .button:hover {
