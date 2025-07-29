@@ -1,17 +1,41 @@
-h3 {
-    color: #2E2F42;
-    font-family: Roboto, sans-serif;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
+/*center*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
 }
 
-p {
-    color: #434455;
-    font-family: Roboto, sans-serif;
-    font-size: 16px;
-    letter-spacing: 0.02em;
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.container {
+    max-width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.photo {
+    display: block;
+}
+ 
+/*------header------*/
+
+.navigation-container {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
 }
 
 .logo {
@@ -23,14 +47,18 @@ p {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    padding: 24px 0;
+    margin-right: 76px;
 }
 
 .studio {
     color: #2e2f42;
 }
 
-ul {
-    list-style-type: none;
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 40px;
 }
 
 .menu .logo-list {
@@ -40,10 +68,16 @@ ul {
     text-decoration: none;
     font-weight: 500;
     letter-spacing: 0.02em;
+    display: block;
+    padding: 24px 0;
 }
 
 address {
     font-style: normal;
+}
+
+.add {
+    margin-left: auto;
 }
 
 .menu .logo-list:hover {
@@ -59,6 +93,12 @@ address {
     color: #404bbf;
 }
 
+.info {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
 .info .cont {
     color: #434455;
     font-family: Roboto, sans-serif;
@@ -66,6 +106,8 @@ address {
     text-decoration: none;
     font-style: normal;
     letter-spacing: 0.02em;
+    display: block;
+    padding: 24px 0;
 }
 
 .info .cont:hover {
@@ -76,11 +118,29 @@ address {
     color: #404BBF;
 }
 
+/*====main====*/
+
 body {
     font-family: Roboto, sans-serif;
     color: #434455;
     line-height: 1.5;
     background-color: #FFFFFF;
+}
+
+.mision-item .third-title {
+    color: #2E2F42;
+    font-family: Roboto, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+}
+
+.mision-item .text {
+    color: #434455;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.02em;
 }
     
 .business {
@@ -145,6 +205,8 @@ body {
     text-transform: capitalize;
     text-transform: capitalize;
 }
+
+/*====footer====*/
 
 .end-page {
     background-color: #2E2F42;
