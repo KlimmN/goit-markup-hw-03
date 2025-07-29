@@ -192,13 +192,43 @@ body {
     background-color: #404BBF;
 }
 
-.second-title {
-    font-size: 36px;
-    text-align: center;
+.features {
+    padding: 120px 0;
 }
 
+.second-title {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.mision-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.mision-item {
+    flex-basis: calc((100% - 72px) / 4);
+}
+
+.third-title {
+    text-align: center;
+    margin-bottom: 8px;
+}
+/*3-section*/
 .team {
     background-color: #F4F4FD;
+    padding: 120px 0;
 }
 
 .team-title {
@@ -208,10 +238,35 @@ body {
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+    margin-bottom: 72px;
+}
+
+.te-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
 }
 
 .te-list .list {
-    background-color: #FFFFFF;
+    background-color: #FFFFFF;flex-basis: calc((100% - 72px) / 4);
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    background-color: #fff;
+}
+
+.team-info {
+    padding: 32px 0;
+}
+
+.text {
+    text-align: center;
+    font-size: 16px;
+}
+
+.portfolio {
+    text-align: center;
+    font-size: 16px;
 }
 
 .port-title {
@@ -222,12 +277,36 @@ body {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     text-transform: capitalize;
+    margin-bottom: 72px;
+}
+
+.port-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 48px 24px;
+}
+
+.port-list-item {
+    width: calc((100% - 48px) / 3);
+}
+
+.portfolio-case-info {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+}
+
+.portfo-title {
+    margin-bottom: 8px;
 }
 
 /*====footer====*/
 
 .end-page {
-    background-color: #2E2F42;
+    background: #2e2f42;
+    padding: 100px 0;
 }
 
 .logo-foot {
@@ -239,6 +318,8 @@ body {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
 .studioo {
@@ -249,4 +330,5 @@ body {
     color: #F4F4FD;
     font-size: 16px;
     letter-spacing: 0.02em;
+    max-width: 264px;
 }
