@@ -1,4 +1,14 @@
 /*center*/
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+    background-color: #fff;
+}
+
 h1,
 h2,
 h3,
@@ -25,6 +35,36 @@ ol {
 .photo {
     display: block;
 }
+
+/*======title-h2=======*/
+
+.mision-title,
+.team-title,
+.port-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2e2f42;
+}
+
+.team-title,
+.port-title {
+    text-transform: capitalize;
+}
+
+/*========title-h3======*/
+
+.mision-third-title,
+.team-third-title,
+.port-third-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+}
  
 /*------header------*/
 
@@ -43,14 +83,17 @@ ol {
 }
 
 .logo {
-    color: #4d5ae5;
-    font-family: Raleway, sans-serif;
-    font-size: 18px;
-    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
     font-weight: 700;
+    font-size: 18px;
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    color: #4d5ae5;
+    text-decoration: none;
+}
+
+.header-logo {
     padding: 24px 0;
     margin-right: 76px;
 }
@@ -62,30 +105,37 @@ ol {
 .menu {
     display: flex;
     align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
     gap: 40px;
 }
 
 .menu .logo-list {
-    color: #2E2F42;
-    font-family: Roboto, sans-serif;
-    font-size: 16px;
-    text-decoration: none;
-    font-weight: 500;
-    letter-spacing: 0.02em;
     display: block;
-    padding: 24px 0;
+    font-weight: 500;
+    color: #2e2f42;
+    padding: 24px 0;;
 }
 
-address {
-    font-style: normal;
+.info .cont:focus,
+.info .cont:hover,
+.menu .logo-list:hover,
+.menu .logo-list:focus {
+      color: #404bbf;
+}
+
+.logo-list,
+.cont {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-decoration: none;
 }
 
 .add {
+    font-style: normal;
     margin-left: auto;
-}
-
-.menu .logo-list:hover {
-    color: #404bbf;
 }
 
 .menu .logo-list:active {
@@ -93,9 +143,6 @@ address {
     text-decoration: underline;
 }
 
-.menu .logo-list:focus {
-    color: #404bbf;
-}
 
 .info {
     display: flex;
@@ -104,64 +151,26 @@ address {
 }
 
 .info .cont {
-    color: #434455;
-    font-family: Roboto, sans-serif;
-    font-size: 16px;
-    text-decoration: none;
-    font-style: normal;
-    letter-spacing: 0.02em;
-    display: block;
-    padding: 24px 0;
+   font-weight: 400;
+   color: #434455;
+   display: block;
+   padding: 24px 0;
 }
 
-.info .cont:hover {
-    color: #404BBF;
-}
+/*====main-1section====*/
 
-.info .cont:focus {
-    color: #404BBF;
-}
-
-/*====main====*/
-
-body {
-    font-family: Roboto, sans-serif;
-    color: #434455;
-    line-height: 1.5;
-    background-color: #FFFFFF;
-}
-
-.hero-container {;
-}
-
-.mision-item .third-title {
-    color: #2E2F42;
-    font-family: Roboto, sans-serif;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-}
-
-.mision-item .text {
-    color: #434455;
-    font-family: Roboto, sans-serif;
-    font-size: 16px;
-    letter-spacing: 0.02em;
-}
-    
-.business {
+.hero {
     background-color: #2e2f42;
     line-height: 1.07;
     padding: 188px 0;
 }
 
 .hero-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 48px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+     gap: 48px;
 }
 
 .page-title {
@@ -188,30 +197,29 @@ body {
     background: #4d5ae5;
 }
 
-.button:hover {
-    background-color: #404BBF;
-}
-
+.button:hover,
 .button:focus {
     background-color: #404BBF;
 }
 
-.features {
+/*=======2-section=======*/
+
+.mision {
     padding: 120px 0;
 }
 
-.second-title {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
+.mision-title-visual-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
 
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .mision-list {
@@ -225,23 +233,18 @@ body {
     flex-basis: calc((100% - 72px) / 4);
 }
 
-.third-title {
-    text-align: center;
+.mision-third-title {
     margin-bottom: 8px;
 }
-/*3-section*/
+
+/*=========3-section========*/
+
 .team {
     background-color: #F4F4FD;
     padding: 120px 0;
 }
 
 .team-title {
-    color: #2e2f42;
-    font-size: 36px;
-    text-align: center;
-    line-height: 1.11;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
     margin-bottom: 72px;
 }
 
@@ -252,7 +255,7 @@ body {
     gap: 24px;
 }
 
-.te-list .list {
+.te-list-item {
     background-color: #FFFFFF;flex-basis: calc((100% - 72px) / 4);
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
@@ -263,7 +266,12 @@ body {
     padding: 32px 0;
 }
 
-.text {
+.team-third-title {
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.text-team {
     text-align: center;
     font-size: 16px;
 }
@@ -271,19 +279,10 @@ body {
 /*=========4-section=========*/
 
 .portfolio {
-    text-align: center;
-    font-size: 16px;
-    padding: 120px 0 120px 0;
+    padding: 120px 0;;
 }
 
 .port-title {
-    color: #2e2f42;
-    font-size: 36px;
-    text-align: center;
-    line-height: 1.11;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-    text-transform: capitalize;
     margin-bottom: 72px;
 }
 
@@ -305,26 +304,18 @@ body {
     border-top: none;
 }
 
-.portfo-title {
+.port-third-title {
     margin-bottom: 8px;
 }
 
 /*====footer====*/
 
-.end-page {
+.bottom-content {
     background: #2e2f42;
     padding: 100px 0;
 }
 
 .logo-foot {
-    color: #4d5ae5;
-    font-family: Raleway, sans-serif;
-    font-size: 18px;
-    text-decoration: none;
-    font-weight: 700;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
     display: inline-block;
     margin-bottom: 16px;
 }
@@ -333,9 +324,7 @@ body {
     color: #F4F4FD;
 }
 
-.end-text {
-    color: #F4F4FD;
-    font-size: 16px;
-    letter-spacing: 0.02em;
-    max-width: 264px;
+.bottom-text {
+   color: #f4f4fd;
+   max-width: 264px;
 }
