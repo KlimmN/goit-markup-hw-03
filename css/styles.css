@@ -28,6 +28,10 @@ ol {
  
 /*------header------*/
 
+.had {
+    border-bottom: 1px solid #e7e9fc;
+}
+
 .navigation-container {
     display: flex;
     align-items: center;
@@ -264,9 +268,12 @@ body {
     font-size: 16px;
 }
 
+/*=========4-section=========*/
+
 .portfolio {
     text-align: center;
     font-size: 16px;
+    padding: 120px 0 120px 0;
 }
 
 .port-title {
